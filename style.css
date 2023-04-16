@@ -51,8 +51,8 @@ header img{
     padding: 5px;
     border-bottom: 1px solid rgba(215, 179, 106, 0.5);
     width: 90%;
-
     margin-top: 20px;
+    visibility: hidden;
 }
 
 .item{
@@ -76,11 +76,13 @@ header img{
 .item .selector{
     display: flex;
     justify-content: flex-start;
+    
 }
 .item p{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .footer{
@@ -91,4 +93,7 @@ header img{
     font-size: 22px;
     padding: 20px;
     color: rgb(133, 133, 133);
+}
+i{
+    border-bottom: 1px solid rgba(133, 133, 133, 0.5);
 }
