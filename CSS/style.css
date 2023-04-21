@@ -2,29 +2,47 @@
     margin: 0;
     padding: 0;
 }
+input:focus, select{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    background-color: rgb(51, 51, 51);
+}
+.light{
+    background-color: rgb(235, 235, 237);
+}
+header .dark{
+    background-color: rgb(30, 30, 30);
+}
+header .light{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0px 0px 3px rgba(133, 133, 133, 0.5);
+}
+.head{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;   
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 25px;
+    border-radius: 15px;
+}
 header{ 
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding: 10px;
-}
-body{
-    
-    background-color: rgb(51, 51, 51);
-}
-header .head{
-    margin-top: 10px;
-    margin-bottom: -20px;
-    display: flex;
+    padding: 5px;
     width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(30, 30, 30);
-    font-family: sans-serif;
-    text-transform: uppercase;
-    padding: 20px;
-    border-radius: 15px;
 }
 header h1{
     font-size: 20px;
@@ -34,9 +52,52 @@ header img{
     width: 60px;
     height: 60px;
 }
+.btn{
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+.btnlight{
+    background-image: url(../image/light.png);
+}
+.btndark{
+    background-image: url(../image/dark.png);  
+}
+input[type='text']{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+    background-color: rgba(133, 133, 133, 0.369);
+    font-size: 18px;
+    color: rgb(42, 42, 42);
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+#select{
+    border: none;
+    background-color: rgb(83, 81, 81);
+    height: 40px;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(215, 179, 106);
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .container{
     padding-top: 15px;
-    
     width: 100%;
     margin-bottom: 30px;
 }
@@ -50,12 +111,12 @@ header img{
 .container li{
     width: 100%;
 }
-.container p{
+.container p, li{
     color: rgb(133, 133, 133);
     font-family: sans-serif;
     text-transform: uppercase;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .container h2{
@@ -69,7 +130,7 @@ header img{
     text-transform: uppercase;
     font-family: sans-serif;
 }
-.container .desc-item{
+.container li {
     box-shadow: 0px 0px 3px rgba(133, 133, 133, 0.369);
     display: flex;
     align-items: center;
@@ -83,14 +144,19 @@ header img{
     display: flex;
     justify-content: flex-start;   
 }
+.footerlight{
+    box-shadow: 0px 0px 3px rgba(133, 133, 133, 0.5);
+    background-color: rgb(230, 230, 230);
+}
 footer{  
-    background-color: rgb(30, 30, 30);
     text-align: center;
     font-family: sans-serif;
     font-size: 22px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: rgb(133, 133, 133);
-    
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
 }
 i{
     border-bottom: 1px solid rgba(133, 133, 133, 0.5);
@@ -109,9 +175,9 @@ i{
 .arrow-up{
     position:absolute;
     left: 0;
-    margin-top: -53px;
+    margin-top: -58px;
     margin-left: 30px;
     width: 30px;
     height: 30px;
-
 }
+

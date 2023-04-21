@@ -9,226 +9,199 @@
     <link rel="shortcut icon" href="./image/build.ico" type="image/x-icon">
     <title>Pedencias Cozinha</title>
 </head>
-<body>
+<body class="dark">
+
     <a name="up"></a>
     <header>
-        <div class="head">
+        <div class="head dark">
             <img src="./image/logo.png" alt="logo novotel">
             <h1>relatório pendências</h1>
-        </div>
+        </img> 
     </header>
-    
-    <main class="container"> 
-        <ul id="bar-restaurante"><h2>bar restaurante</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Pontos de avarias e trincas no piso próximo ao ralo</P>
+   
+        <div class="btn btnlight"></div>
+
+    <main class="container">
+    <select id="select">
+        <option value="vazio">adicione nova pendência</option>
+        <option value="bar-restaurante">bar do restaurante</option>
+        <option value="copinha-garcon">copinha dos garçons</option>
+        <option value="cozinha-novotel">cozinha novotel</option>
+        <option value="acougue">acougue</option>
+        <option value="camara-fria">camara fria</option>
+        <option value="area-lavagem">area de lavagem</option>
+        <option value="almoxarifado-novotel">almoxarifado novotel</option>
+        <option value="almoxarifado-ibis">almoxarifado ibis</option>
+        <option value="area-lixo">area lixo</option>
+        <option value="refeitorio">Refeitorio</option>
+        <option value="vestiarios">Vestiarios</option>
+        <option value="copinha-eventos">Copinha de Eventos</option>
+    </select>
+    <input type="text" id="input" >
+        <ul class="bar-restaurante"><h2>bar restaurante</h2>
+            <li>
+                Pontos de avarias e trincas no piso próximo ao ralo</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Borracha Refrigeradores 1 e 4 encontram-se danificadas</P>
+            <li>
+                Borracha Refrigeradores 1 e 4 encontram-se danificadas
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ralo sob o Refrigerador 1 com sistema de fechamento danificado e solto</P>
+            <li>
+               Ralo sob o Refrigerador 1 com sistema de fechamento danificado e solto
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Bancada com buraco - Necessário realizar reparo</P>
+            <li>
+                Bancada com buraco - Necessário realizar reparo</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Prateleira do refrigerador 7 com ferrugem - Necessário realizar pintura</P>
+            <li>
+                Prateleira do refrigerador 7 com ferrugem - Necessário realizar pintura
             </li>
         </ul>
-        <ul id="copinha-garcon"><h2>copinha dos garçons</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Pontos de avarias e trincas no piso próximo ao ralo</P>
+        <ul class="copinha-garcon"><h2>copinha dos garçons</h2>
+            <li>
+                Pontos de avarias e trincas no piso próximo ao ralo</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Refrigerador com vazamento de água</P>
+            <li>
+                Refrigerador com vazamento de água</P>
             </li>
         </ul>   
-        <ul id="cozinha-novotel"><h2>cozinha novotel</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Porta de acesso a cozinha com Ausência de protetor de rodapés e sem molas</P>
+        <ul class="cozinha-novotel"><h2>cozinha novotel</h2>
+            <li>
+                Porta de acesso a cozinha com Ausência de protetor de rodapés e sem molas
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Parede próximo a lixeira da área de lavagem apresenta avarias</P>
+            <li>
+                Parede próximo a lixeira da área de lavagem apresenta avarias
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Alguns pontos do azulejo apresenta trincas</P>
+            <li>
+                Alguns pontos do azulejo apresenta trincas
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Piso apresenta vários pontos de avarias e trincas</P>
+            <li>
+                Piso apresenta vários pontos de avarias e trincas
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Fogão apresenta descascamento na pintura e pontos de ferrugem</P>
+            <li>
+                Fogão apresenta descascamento na pintura e pontos de ferrugem
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Lateral da chapa apresenta pontos de ferrugem</P>
+            <li>
+                Lateral da chapa apresenta pontos de ferrugem
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Prateleiras dos refrigeradores apresentam pontos de descascamento da pintura</P>
+            <li>
+                Prateleiras dos refrigeradores apresentam pontos de descascamento da pintura
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Lixeiras de descarte de vidro e latas devem ser com tampa e pedal</P>
+            <li>
+                Lixeiras de descarte de vidro e latas devem ser com tampa e pedal
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Instalar tampa de proteção em tomadas com ausência de tampa</P>
+            <li>
+                Instalar tampa de proteção em tomadas com ausência de tampa</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Presença de vazamento no sprinkler próximo ao fogão</P>
+            <li>
+                Presença de vazamento no sprinkler próximo ao fogão</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>01 das portas do Refrigerador 05 não está mantendo totalmente fechada - Realizar manutençã</P>
+            <li>
+                01 das portas do Refrigerador 05 não está mantendo totalmente fechada - Realizar manutençã
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Providenciar troca das borrachas dos Refrigeradores que encontram-se em mau estado de conservação</P>
+            <li>
+                Providenciar troca das borrachas dos Refrigeradores que encontram-se em mau estado de conservação</P>
             </li>
         </ul>
-        <ul id="acougue"><h2>açougue</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Pisos trincados</P>
+        <ul class="acougue"><h2>açougue</h2>
+            <li>
+                Pisos trincados
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Embutir fiação da tomada da Máquina de gelo</P>
+            <li>
+                Embutir fiação da tomada da Máquina de gelo
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Lixeira com ausência de pedal - Providenciar troca</P>
+            <li>
+                Lixeira com ausência de pedal - Providenciar troca
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P> Necessário realizar manutenção da máquina de gelo</P>
+            <li>
+                Necessário realizar manutenção da máquina de gelo
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Sifão da pia desalocado - Realizar reparo</P>
+            <li>
+                Sifão da pia desalocado - Realizar reparo
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Máquina de gelo com ausência de tampa adequada</P>
+            <li>
+                Máquina de gelo com ausência de tampa adequada
             </li>
         </ul>
-        <ul id="camara-fria"><h2>câmara fria</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Pontos de ferrugem na parede/revestimento da Câmara próximo ao piso</P>
+        <ul class="camara-fria"><h2>câmara fria</h2>
+            <li>
+                Pontos de ferrugem na parede/revestimento da Câmara próximo ao piso
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ausência de trava de segurança na porta da Câmara dos congelados</P>
+            <li>
+                Ausência de trava de segurança na porta da Câmara dos congelados
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ausência de porta na Câmara dos Hortifrutis/ Câmara desativada</P>
+            <li>
+                Ausência de porta na Câmara dos Hortifrutis/ Câmara desativada
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Prateleiras apresentam pontos de descascamento na pintura</P>
+            <li>
+                Prateleiras apresentam pontos de descascamento na pintura
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>01 das luminárias encontra-se com a iluminação ofuscada</P>
+            <li>
+                01 das luminárias encontra-se com a iluminação ofuscada</P>
             </li>
         </ul>
-        <ul id="area-lavagem"><h2>área de lavagem</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Prateleiras apresentam pontos de descascamento na pintura</P>
+        <ul class="area-lavagem"><h2>área de lavagem</h2>
+            <li>
+                Prateleiras apresentam pontos de descascamento na pintura</P>
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Piso apresenta pontos de avarias/danificado</P>
+            <li>
+                Piso apresenta pontos de avarias/danificado
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Presença de furo no forro</P>
+            <li>
+                Presença de furo no forro
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ausência de água quente</P>
+            <li>
+                Ausência de água quente
             </li>
         </ul>
-        <ul id="almoxarifado-novotel"><h2>almoxarifado novotel</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Piso do estoque apresenta pontos de avarias</P>
+        <ul class="almoxarifado-novotel"><h2>almoxarifado novotel</h2>
+            <li>
+                Piso do estoque apresenta pontos de avarias
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Porta apresenta pontos de madeira aparente</P>
+            <li>
+                Porta apresenta pontos de madeira aparente
             </li>
         </ul>
-        <ul id="almoxarifado-ibis"><h2>almoxarifado ibis</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ausência de protetor de rodapés na porta</P>
+        <ul class="almoxarifado-ibis"><h2>almoxarifado ibis</h2>
+            <li>
+                Ausência de protetor de rodapés na porta
             </li>
         </ul>
-        <ul id="area-lixo"><h2>área de lixo</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Parede junto a porta sem acabemento e com frestas</P>
+        <ul class="area-lixo"><h2>área de lixo</h2>
+            <li>
+                Parede junto a porta sem acabemento e com frestas
             </li>
         </ul>
-        <ul id="refeitorio"><h2>refeitório</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ralo solto</P>
+        <ul class="refeitorio"><h2>refeitório</h2>
+            <li>
+                Ralo solto
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Cadeiras e mesas com pontos de descascamento na pintura dos pés</P>
+            <li>
+                Cadeiras e mesas com pontos de descascamento na pintura dos pés
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Mesa de apoio do filtro com ponto de madeira aparente</P>
+            <li>
+               Mesa de apoio do filtro com ponto de madeira aparente</P>
             </li>
         </ul>
-        <ul id="vestiarios"><h2>vestiarios</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ralos mantidos abertos</P>
+        <ul class="vestiarios"><h2>vestiarios</h2>
+            <li>              
+                Ralos mantidos abertos
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Ausência de parte do batente na porta, e pontos de madeira aparente no sanitário feminino</P>
+            <li>
+                Ausência de parte do batente na porta, e pontos de madeira aparente no sanitário feminino
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Pontos de madeira aparente na porta do Sanitário masculino e parte do batente solta</P>
+            <li>
+                Pontos de madeira aparente na porta do Sanitário masculino e parte do batente solta
             </li>
         </ul>
-        <ul id="copinha-eventos"><h2>copinha eventos</h2>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Necessário instalar papeleira na pia de lavagem das mãos</P>
+        <ul class="copinha-eventos"><h2>copinha eventos</h2>
+            <li>
+                Necessário instalar papeleira na pia de lavagem das mão     
             </li>
-            <li class="desc-item">
-                <input type="checkbox" class="selector" name="check"></input>
-                <P>Torneira com vazamento - Realizar manutenção</P>
+            <li>
+                Torneira com vazamento - Realizar manutenção
             </li>
         </ul>
     </main>
-    <footer>
+    <footer class="dark">
         <a href="#up"><img class="arrow-up" src="./image/up-arrow.png" alt="seta"></a>
         <div class="social">
             <a href="https://wa.me/5515997392889" target="_blank"><img src="./image/whatsapp.png" alt="whatsapp"></a>
@@ -236,12 +209,10 @@
             <a href="https://www.facebook.com/jairo.oliveiramatos" target="_blank"><img src="./image/facebook.png" alt="facebook"></a>
             <a><img src="./image/linkedin.png" alt="linkedin"></a>
             <a href="https://github.com/JairoMatos" target="_blank"><img src="./image/github.png" alt="github"></a>
-
         </div>
         <div class="copy">
             <i>Jairo Oliveira Matos &copy;</i>
-        </div>
-        
+        </div>      
     </footer>
     <script src="./JS/script.js"></script>
 </body>
