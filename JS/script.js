@@ -94,7 +94,7 @@ i.addEventListener('keyup', function(e){
     let newli =  document.createElement('li');
     newli.innerText = textInput;
     
-    if(e.code == 'Enter'){
+    if(e.key == 'Enter'){
         if(textInput){
             eventLocal.appendChild(newli);
         }else{
