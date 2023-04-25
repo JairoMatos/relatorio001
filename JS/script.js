@@ -25,6 +25,7 @@ btCor.addEventListener('click', function(){
         btnImg.classList.replace('btndark', 'btnlight');
         
     }
+    
 })
     
 const barRestaurante = document.querySelector('.bar-restaurante')
@@ -92,22 +93,67 @@ i.addEventListener('keyup', function(e){
 
     let eventLocal =  option;
     let newli =  document.createElement('li');
-    newli.innerText = textInput;
+    let checkbox = document.createElement('input');
+    let p = document.createElement('p');
+    checkbox.type = 'checkbox';
     
+
+    //newli.innerText = textInput;
+    p.innerText = textInput;
     if(e.key == 'Enter'){
         if(textInput){
             eventLocal.appendChild(newli);
+            newli.appendChild(checkbox);
+            newli.appendChild(p)
+            
         }else{
             alert('campo vazio');
         }
         input.value = '';
+     
     }  
+    
 })
 
-const li = document.querySelector('li');
+/* 
 
-li.addEventListener('keyup', function(){
-    li.style.backgroundColor = 'red';
-    console.log('precionou')
-})
+let list =[]
+let listchild = []
+let li = []
 
+let typemeuitem = []
+let listCheckBox = []
+let lista = document.querySelector('main');
+for(let i=0; i<lista.children.length; i++){
+
+    if(lista.children[i].tagName == "UL"){
+        list.push(lista.children[i])
+   }
+}
+
+    list.forEach(function(item){
+        listchild.push((item.children))
+    })
+
+    listchild.forEach(function(item){
+
+        for(let i=0; i<item.length; i++){
+            li.push(item[i])
+            
+        }
+    })
+    for(let i=0; i<li.length; i++){
+        if(li[i].tagName=="LI"){
+            typemeuitem.push(li[i])
+        }
+    }
+
+    for(let i=0; i<typemeuitem.length; i++){
+        if(typemeuitem[i].tagName=="INPUT"){
+            console.log('entrei')
+        }
+    }
+  
+    
+*/
+     
