@@ -122,7 +122,7 @@ document.addEventListener('click', function(e){
     if(e.target.tagName == "INPUT"){
         for(let i=0; i<list.length; i++){
     if(list[i].children[0].checked){
-        let result = confirm("RESOLVIDO" + list[i].innerText)
+        let result = confirm("RESOLVIDO\n" + list[i].innerText)
             if(result === true){
                 console.log('removido')
                 list[i].parentNode.removeChild(list[i])
