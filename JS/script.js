@@ -104,7 +104,7 @@ i.addEventListener('keyup', function(e){
         if(textInput){
             eventLocal.appendChild(newli);
             newli.appendChild(checkbox);
-            newli.appendChild(p)
+            newli.appendChild(p);
             
         }else{
             alert('campo vazio');
@@ -115,25 +115,46 @@ i.addEventListener('keyup', function(e){
     
 })
 
+
+
 document.addEventListener('click', function(e){
-    let list = document.querySelectorAll('li')
+    let list = document.querySelectorAll('li');
+    let listaConcluida = Object.assign (document.createElement('div'),{
+        classList:['liLocal']
+    });
+   
+    let ulLocal = document.querySelector('.ulLocal');
+    let p = document.createElement('p');
     
 
     if(e.target.tagName == "INPUT"){
         for(let i=0; i<list.length; i++){
             if(list[i].children[0].checked){
-            let result = confirm("EXCLUIR?\n\n" + list[i].innerText)
-            if(result === true){
-                console.log('removido')
-                list[i].parentNode.removeChild(list[i])
-            }else{
-                console.log('nao removido')
+                let result = confirm("EXCLUIR?\n\n" + list[i].innerText);
+                if(result === true){
+                    p = list[i].innerText
+                    
+                    ulLocal.appendChild(listaConcluida);
+                    listaConcluida.append(p)
+
+                    list[i].parentNode.removeChild(list[i]);
+            
+                }
             }
-            }
-    
+
         }
     }
 
+})
+
+const btnLista = document.querySelector('.btn-lista');
+btnLista.addEventListener('click', function(){
+    let ulLocal = document.querySelector('.ulLocal');
+    if(ulLocal.style.display == 'none'){
+        ulLocal.style.display = 'flex'
+    }else{
+        ulLocal.style.display = 'none'
+    }
 })
 
 
