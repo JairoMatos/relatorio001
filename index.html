@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="./image/build.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Pedencias Cozinha</title>
 </head>
 <body class="dark">
@@ -17,13 +18,20 @@
             <h1>relatório pendências</h1>
         </img> 
     </header>
-   
+    
         <div class="btn btnlight"></div>
-        <button class="btn-lista">serviços Concluidos</button>
 
-        <ul class="ulLocal">
-           
-        </ul>
+        
+
+        
+        
+        <ul class="ulLocal"></ul></ul>
+
+       <!--
+        <ul class="gerarPdf"></ul>
+        <button class="btn-lista pdf">Gerar PDF</button>
+        <button class="btn-lista">serviços Concluidos</button>
+        --> 
 
     <main class="container">
     <select id="select">
@@ -46,7 +54,7 @@
     
         <ul class="bar-restaurante"><h2>bar restaurante</h2>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Pontos de avarias e trincas no piso próximo ao ralo<p> 
             </li>     
             <li>
@@ -54,11 +62,11 @@
                 <p>Borracha Refrigeradores 1 e 4 encontram-se danificadas</p>    
             </li>    
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                <p>Ralo sob o Refrigerador 1 com sistema de fechamento danificado e solto</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Bancada com buraco - Necessário realizar reparo</p>
             </li>
             <li>
@@ -108,7 +116,7 @@
                 <p>Prateleiras dos refrigeradores apresentam pontos de descascamento da pintura</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Lixeiras de descarte de vidro e latas devem ser com tampa e pedal</p>
             </li>
             <li>
@@ -116,7 +124,7 @@
                 <p>Instalar tampa de proteção em tomadas com ausência de tampa</P>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Presença de vazamento no sprinkler próximo ao fogão</p>
             </li>
             <li>
@@ -130,27 +138,27 @@
         </ul>
         <ul class="acougue"><h2>açougue</h2>
             <li>
-                <input type="checkbox" class="checked">
+                <input type="checkbox">
                 <p>Pisos trincados</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Embutir fiação da tomada da Máquina de gelo</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Lixeira com ausência de pedal - Providenciar troca</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Necessário realizar manutenção da máquina de gelo</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Sifão da pia desalocado - Realizar reparo</P>
             </li>
             <li>
-                <input type="checkbox" >
+                <input type="checkbox" checked>
                 <p>Máquina de gelo com ausência de tampa adequada</p>
             </li>
         </ul>
@@ -160,7 +168,7 @@
                 <p>Pontos de ferrugem na parede/revestimento da Câmara próximo ao piso</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>Ausência de trava de segurança na porta da Câmara dos congelados</p>
             </li>
             <li>
@@ -172,7 +180,7 @@
                 <p>Prateleiras apresentam pontos de descascamento na pintura</p>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <p>01 das luminárias encontra-se com a iluminação ofuscada</p>
             </li>
         </ul>
@@ -186,7 +194,7 @@
                 <P>Piso apresenta pontos de avarias/danificado</P>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Presença de furo no forro</P>
             </li>
             <li>
@@ -196,7 +204,7 @@
         </ul>
         <ul class="almoxarifado-novotel"><h2>almoxarifado novotel</h2>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Piso do estoque apresenta pontos de avarias</P>
             </li>
             <li>
@@ -218,7 +226,7 @@
         </ul>
         <ul class="refeitorio"><h2>refeitório</h2>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Ralo solto</P>
             </li>
             <li>
@@ -226,7 +234,7 @@
                 <P>Cadeiras e mesas com pontos de descascamento na pintura dos pés</P>
             </li>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Mesa de apoio do filtro com ponto de madeira aparente</P>
             </li>
         </ul>
@@ -246,7 +254,7 @@
         </ul>
         <ul class="copinha-eventos"><h2>copinha eventos</h2>
             <li>
-                <input type="checkbox">
+                <input type="checkbox" checked>
                 <P>Necessário instalar papeleira na pia de lavagem das mão</P>
             </li>
             <li>

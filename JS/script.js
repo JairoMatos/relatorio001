@@ -115,11 +115,19 @@ i.addEventListener('keyup', function(e){
     
 })
 
-
+const btnLista = document.querySelector('.btn-lista');
+btnLista.addEventListener('click', function(){
+    let ulLocal = document.querySelector('.ulLocal');
+    if(ulLocal.style.display == 'none'){
+        ulLocal.style.display = 'flex'
+    }else{
+        ulLocal.style.display = 'none'
+    }
+})
 
 document.addEventListener('click', function(e){
     let list = document.querySelectorAll('li');
-    let listaConcluida = Object.assign (document.createElement('div'),{
+    const listaConcluida = Object.assign (document.createElement('div'),{
         classList:['liLocal']
     });
    
@@ -133,32 +141,42 @@ document.addEventListener('click', function(e){
                 let result = confirm("EXCLUIR?\n\n" + list[i].innerText);
                 if(result === true){
                     p = list[i].innerText
-                    
+                
                     ulLocal.appendChild(listaConcluida);
                     listaConcluida.append(p)
 
                     list[i].parentNode.removeChild(list[i]);
-            
+                    
                 }
             }
 
         }
     }
+   
+})
+/*
+let listpdf = document.querySelector('.ulLocal');
+let gerarPdf = document.querySelector('.gerarPdf');
+let btnPdf = document.querySelector('.pdf');
+let p = document.createElement('div');
+
+btnPdf.addEventListener('click', function(){
+
+
+    console.log(gerarPdf)
+    const option = {
+        margin: 1,
+        filename: 'pendencias-cozinha.pdf',
+        html2canvas: {scale: 2},
+        jsPDF: {unit: "mm", format: "a4", orientation: "portrait"}
+    };
+       //html2pdf().set(option).from().save();
 
 })
 
-const btnLista = document.querySelector('.btn-lista');
-btnLista.addEventListener('click', function(){
-    let ulLocal = document.querySelector('.ulLocal');
-    if(ulLocal.style.display == 'none'){
-        ulLocal.style.display = 'flex'
-    }else{
-        ulLocal.style.display = 'none'
-    }
-})
+ 
 
 
-/* 
 
 let list =[]
 let listchild = []

@@ -17,8 +17,10 @@ body{
     align-items: center;
     background-color: rgb(51, 51, 51); 
     transition: .5s all ease-in-out;
-    
+    position: absolute;
 }
+
+
 .light{
     background-color: rgb(235, 235, 237);
     
@@ -31,7 +33,7 @@ header .light{
     box-shadow: 0px 0px 3px rgba(133, 133, 133, 0.5);
 }
 .head{
-    margin-top: 5px;
+    
     margin-bottom: -20px;
     display: flex;
     width: 100%;
@@ -40,7 +42,8 @@ header .light{
     font-family: sans-serif;
     text-transform: uppercase;
     padding: 25px;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
 }
@@ -76,7 +79,7 @@ header img{
     transition: .5s ;
     cursor: pointer;
 }
-.btn-lista:hover{
+.btn-lista:active{
     transform: scale(0.99);
 }
 
@@ -84,20 +87,19 @@ header img{
     margin-top: 30px;
     border: none;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
 }
 .btnlight{
     background-image: url(../image/light.png);
     transition: .7s all ease-in-out;
-    
 }
 .btndark{
     background-image: url(../image/dark.png);  
     transition: .7s all ease-in-out;
     transform: rotate(70deg);
-
 }
+
 input[type='text']{
     border: none;
     border-radius: 5px;
@@ -162,6 +164,10 @@ li{
     width: 96vw;
     cursor: pointer;
 }
+.ulLocal{
+    display: none;
+    position: relative;
+}
 .liLocal{
     display: flex;
     align-items: center;
@@ -180,14 +186,7 @@ li{
 p{
     max-width: 95%;
 }
-body{
-    position: absolute;
-}
-.ulLocal{
-    display: none;
-    position: relative;
 
-}
 .container h2{
     visibility: hidden;
     border-bottom: 1px solid rgba(215, 179, 106, 0.5);
