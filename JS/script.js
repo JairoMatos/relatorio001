@@ -154,7 +154,7 @@ document.addEventListener('click', function(e){
     }
    
 })
-/*
+
 let listpdf = document.querySelector('.ulLocal');
 let gerarPdf = document.querySelector('.gerarPdf');
 let btnPdf = document.querySelector('.pdf');
@@ -216,5 +216,5 @@ for(let i=0; i<lista.children.length; i++){
     }
   
     
-*/
-     
+
+alert('testeJS')
