@@ -88,7 +88,6 @@ i.addEventListener('keyup', function(e){
         case 'copinha-eventos':
             option = copaEventos;
         break;
-        
     }
 
     let eventLocal =  option;
